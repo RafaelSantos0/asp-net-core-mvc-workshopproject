@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using SalesProject.Models;
+using SalesProject.Models.ViewModels;
 
 namespace SalesProject.Controllers
 {
@@ -17,8 +17,8 @@ namespace SalesProject.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
-
+            ViewData["Message"] = "Web MVC Sales App";
+            ViewData["Owner"] = "Rafael Santos";
             return View();
         }
 
